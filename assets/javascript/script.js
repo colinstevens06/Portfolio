@@ -13,4 +13,4 @@ tl.fromTo(hero, 2, { height: "0%" }, { height: "80%", ease: Power2.easeInOut })
   .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=1")
   .fromTo(hamburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=1")
   .fromTo(headline, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
-  .fromTo(bodycopy, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1");
+  .fromTo(bodycopy, 0.5, { opacity: 0 }, { opacity: 1 });
