@@ -189,6 +189,27 @@ section {
    padding: 24px;
 }
 
+@media screen and (max-width: 992px) {
+   .fas,
+   .far {
+      font-size: 100px;
+      padding: 24px;
+   }
+
+   .card-title {
+      font-size: 1.25rem;
+   }
+
+   .card {
+      width: 125px;
+   }
+
+   .slider {
+      height: 300vh;
+      background: linear-gradient(to left, #ffa57b, #f8ceba);
+   }
+}
+
 @media screen and (max-width: 678px) {
    p {
       font-size: 1.25rem;
@@ -230,27 +251,6 @@ section {
 
    .slider {
       height: 525vh;
-      background: linear-gradient(to left, #ffa57b, #f8ceba);
-   }
-}
-
-@media screen and (max-width: 992px) {
-   .fas,
-   .far {
-      font-size: 100px;
-      padding: 24px;
-   }
-
-   .card-title {
-      font-size: 1.25rem;
-   }
-
-   .card {
-      width: 125px;
-   }
-
-   .slider {
-      height: 300vh;
       background: linear-gradient(to left, #ffa57b, #f8ceba);
    }
 }
