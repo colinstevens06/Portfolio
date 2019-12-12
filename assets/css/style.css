@@ -81,6 +81,10 @@ nav {
    background: linear-gradient(to left, #ffa57b, #ffc8ae);
 }
 
+.grey-gradient {
+   background: linear-gradient(to left, #e3e9f5, #c3d3f1);
+}
+
 .hero {
    height: 60%;
    width: 100%;
@@ -91,6 +95,7 @@ nav {
    width: 100%;
    height: 100%;
    object-fit: cover;
+   box-shadow: 20px 10px 50px -5px;
 }
 
 section {
@@ -120,6 +125,7 @@ section {
    left: 0;
    top: 0;
    opacity: 0.1;
+   box-shadow: 20px 10px 50px -5px;
 }
 
 .body-copy {
@@ -138,7 +144,6 @@ section {
    float: right;
    margin: 0 0 30px 30px;
    box-shadow: 20px 10px 50px -5px;
-   opacity: 1;
 }
 
 .body-copy::after {
@@ -149,9 +154,10 @@ section {
    position: absolute;
    left: 0;
    top: 0;
-   opacity: 0.7;
+   opacity: 0.9;
    z-index: -1;
    border-radius: 10px;
+   box-shadow: 20px 10px 50px -5px;
 }
 
 .card-deck {
@@ -174,6 +180,8 @@ section {
    border: none;
    transition: 0.5s;
    align-items: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .card-title {
@@ -208,18 +216,21 @@ section {
    .far {
       font-size: 100px;
       padding: 24px;
+      font-size: 10rem;
+      align-items: center;
    }
 
    .card-title {
-      font-size: 1.25rem;
+      font-size: 2.25rem;
+      text-align: center;
    }
 
    .card-home {
-      width: 125px;
+      width: 80%;
    }
 
    .slider {
-      height: 300vh;
+      /* height: 300vh; */
       background: linear-gradient(to left, #ffa57b, #f8ceba);
    }
 }
@@ -264,7 +275,7 @@ section {
    }
 
    .slider {
-      height: 525vh;
+      height: 450px;
       background: linear-gradient(to left, #ffa57b, #f8ceba);
    }
 }
