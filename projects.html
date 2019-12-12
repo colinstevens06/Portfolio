@@ -6,6 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
       <!-- STYLESHEETS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
          rel="stylesheet"
          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,14 +22,14 @@
       ></script>
 
       <!-- SEO TOUCHPOINTS -->
-      <title>Colin Stevens | Web Developer | Baltimore</title>
+      <title>Projects by Colin Stevens | Web Developer | Baltimore</title>
    </head>
 
    <!-- START OF BODY -->
    <body class="orange-gradient">
       <header>
          <nav>
-            <h1 class="logo">Colin Stevens</h1>
+            <div class="logo">Colin Stevens</div>
             <div class="nav-group">
                <a href="index.html"><div class="nav-btn">Home</div></a>
                <a href="projects.html"><div class="nav-btn">Projects</div></a>
@@ -37,7 +38,158 @@
          </nav>
          <!-- END OF NAVIGATION -->
 
-         
+         <main class="container projects-container mt-4">
+            <h1 class="mb-4">Projects by <span>Colin Stevens</span></h1>
+
+            <!-- ************ START CARD 1 ************ -->
+            <div class="card">
+               <div class="row no-gutters">
+                  <div class="col-md-6">
+                     <img src="./assets/images/projects/lies-from-granny-band-website.jpg" alt="Screenshot of Lies From Granny's website" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                     <div class="card-body">
+                        <div class="card-title">Lies From Granny</div>
+                        <div class="card-text">
+                           <p>This website is a marketing tool for Lies From Granny, my band. It's target audiences are fans and potential venues.</p>
+                           <p>Features include:</p>
+                           <ul>
+                              <li>Fades between pages</li>
+                              <li>Modern design</li>
+                              <li>Custom art</li>
+                           </ul>
+                           <a class="btn btn-projects">Site</a>
+                           <a class="btn btn-projects">GitHub Repo</a>
+
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            <!-- ================ END OF CARD 1 ================ -->
+
+            <!-- ************ START CARD 2 ************ -->
+            <div class="card" data-aos="fade-left">
+               <div class="row no-gutters">
+                  <div class="col-md-6 order-2">
+                     <img src="./assets/images/projects/group-project.jpg" alt="Screenshot of group project's website" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                     <div class="card-body">
+                        <div class="card-title">Group Project - Trivia Game</div>
+                        <div class="card-text">
+                           <p>Working with two classmates, we built a randomized trivia game. I focused on using JavaScript and AJAX calls to create the gameplay. My code focused on:</p>
+                           <ul>
+                              <li>Gameplay from start to finish</li>
+                              <li>AJAX calls to generate the questions</li>
+                              <li>Timer during gameplay</li>
+                              <li>Sounds during gameplay</li>
+                              <li>Fades during gameplay</li>
+                              <li>CSS tweaks</li>                              
+                           </ul>
+                              <a class="btn btn-projects">Site</a>
+                              <a class="btn btn-projects">GitHub Repo</a>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            <!-- ================ END OF CARD 2 ================ -->
+
+            <!-- ************ START CARD 3 ************ -->
+            <div class="card" data-aos="fade-right">
+               <div class="row no-gutters">
+                  <div class="col-md-6">
+                     <img src="./assets/images/projects/weather-dashboard.jpg" alt="Screenshot of weather dashboard website" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                     <div class="card-body">
+                        <div class="card-title">Weather Dashboard</div>
+                        <div class="card-text">
+                           <p>This was our first project using AJAX calls. I used three seperate AJAX calls: 
+                              <ul>
+                                 <li>The first to set the current day's forecast</li>
+                                 <li>The second to get the 5-day forecast</li>
+                                 <li>The third to get the UV index</li>
+                              </ul>
+                              <p>I also used local storage to store the previous searches. I used JQuery for my JavaScript. I used Bootstrap to match the design specs we were given.</p>
+                           </p>
+
+                              <a class="btn btn-projects">Site</a>
+                              <a class="btn btn-projects">GitHub Repo</a>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            <!-- ================ END OF CARD 3 ================ -->
+
+            <!-- ************ START CARD 4 ************ -->
+            <div class="card" data-aos="fade-left">
+               <div class="row no-gutters">
+                  <div class="col-md-6">
+                     <div class="card-body">
+                        <div class="card-title">Day Planner</div>
+                        <div class="card-text">
+
+                           <p>This was the most challenging project so far. It was the last project we were required to use JavaScript in without using JQuery. I perservered.</p>
+                           <p>Different things I accomplished with this project:</p>
+                           <ul>
+                              <li>Using local storage to store the data for each day's data</li>
+                              <li>The time of day updates regularly. As the day goes on, the colors of the day planner change</li>
+                              <li>Using JavaScrip to dynamically create elements on the page</li>
+                           </ul>
+
+                              <a class="btn btn-projects">Site</a>
+                              <a class="btn btn-projects">GitHub Repo</a>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="./assets/images/projects/day-planner.jpg" alt="Screenshot of day planner website" class="img-fluid">
+                  </div>
+                  
+               </div>
+            </div>
+            <!-- ================ END OF CARD 4 ================ -->
+
+            <!-- ************ START CARD 5 ************ -->
+            <div class="card" data-aos="fade-right">
+               <div class="row no-gutters">
+                  <div class="col-md-6">
+                     <img src="./assets/images/projects/quiz-game.jpg" alt="Screenshot of quiz game's website" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                     <div class="card-body">
+                        <div class="card-title">Timed Quiz Game</div>
+                        <div class="card-text">
+                           <p>This was our second JavaScript project. We were getting started with the basics of event listeners and changing the elements on the page based on user events.</p>
+                           <p>This was also the first time we used a timer and local storage.</p>
+                           <p>I created the gameplay and matched the design to the specs provided.</p>
+                              <a class="btn btn-projects">Site</a>
+                              <a class="btn btn-projects">GitHub Repo</a>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            <!-- ================ END OF CARD 5 ================ -->
+            
+         </main>
+
+         <!-- ***************** SCROLL EFFECTS ***************** -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init({
+              offset: 250,
+              duration: 800
+           });
+         </script>
    </body>
 
    <script

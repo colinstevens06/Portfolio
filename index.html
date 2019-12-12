@@ -6,6 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
       <!-- STYLESHEETS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
          rel="stylesheet"
          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -47,75 +48,31 @@
          </section>
          <div class="slider" id="slider"></div>
       </header>
-      <div class="container">
-         <div class="body-copy" id="body-copy" style="opacity: 0;">
-            <img
-               src="./assets/images/colin-stevens-headshot.jpg"
-               alt="Colin Stevens"
-               class="rounded-circle"
-            />
-            <h2>Who is Colin Stevens?</h2>
-            <p>
-               I’m a front-end web developer and storyteller whose experiences
-               in web project management, journalism and customer service have
-               shaped me into a detail-oriented, product-focused problem solver.
-            </p>
-
-            <p>
-               I am currently enrolled in a full stack development bootcamp at
-               Johns Hopkins University. So far in the bootcamp, I built upon my
-               strong foundation in HTML and CSS while learning the basics of
-               JavaScript and JQuery, focusing all my projects on mobile-first
-               designs.
-            </p>
-
-            <p>
-               In addition to the bootcamp, I work full time managing content
-               and search engine optimization on a local hospital’s
-               consumer-facing website. My time in this role has helped me learn
-               about crafting a smooth user experience and how to develop
-               content that ranks high in search engines. My degree and
-               subsequent career in journalism, specifically working at a daily
-               newspaper, shaped my ability to work in deadline-driven
-               environments with a focus on detail. The combination of these
-               experiences gave me a strong foundation for my future as a web
-               developer and furthering my career in web marketing.
-            </p>
-            <p>
-               In my free time, I play drums in a cover band. Part of my band
-               duties is promoting upcoming shows and managing our brand. You
-               can see examples of my work on our Instagram account and on our
-               website, which I designed.
-            </p>
-            <p>
-               I also enjoy photography. I took the photos on this page -
-               including the headshot, using a timer - and my photos can be
-               viewed on my Instagram account.
-            </p>
-            <div class="row">
-               <div class="col">
-                  <div class="three-pack">
-                     <div class="card-deck">
+      <!-- *************** START OF THE THREE PACK *************** -->
+      
+      <div class="container my-5 later-fade">
+         <div class="row">
+            <div class="col">
+               <div class="three-pack">
+                  <div class="card-deck" data-aos="fade-right">
+                     <div class="card card-home text-center">
                         <a href="./projects.html">
-                           <div class="card text-center">
-                              <i class="fas fa-laptop-code"></i>
-                              <div class="card-title">Development Projects</div>
-                           </div>
+                           <i class="fas fa-laptop-code"></i>
+                           <div class="card-title">Development Projects</div>
                         </a>
-                        <a
-                           href="./assets/PDFs/colin-stevens-resume.pdf"
-                           target="_blank"
-                        >
-                           <div class="card text-center">
-                              <i class="far fa-keyboard"></i>
-                              <div class="card-title">Resume</div>
-                           </div>
+                     </div>
+
+                     <div class="card card-home text-center">
+                        <a href="./assets/PDFs/colin-stevens-resume.pdf">
+                           <i class="far fa-keyboard"></i>
+                           <div class="card-title">Resume</div>
                         </a>
+                     </div>
+
+                     <div class="card card-home text-center">
                         <a href="./about.html">
-                           <div class="card text-center">
-                              <i class="fas fa-user"></i>
-                              <div class="card-title">About Me</div>
-                           </div>
+                           <i class="fas fa-user"></i>
+                           <div class="card-title">About Me</div>
                         </a>
                      </div>
                   </div>
@@ -123,6 +80,71 @@
             </div>
          </div>
       </div>
+
+         <!-- ============== END OF THE THREE PACK ============== -->
+   <div class="orange-gradient later-fade" style="opacity: 0;">
+      <div class="container">
+         <div class="row">
+            <div class="body-copy my-5" id="body-copy" data-aos="fade-up">
+               <img
+                  src="./assets/images/colin-stevens-headshot.jpg"
+                  alt="Colin Stevens"
+                  class="rounded-circle"
+               />
+               <h2>Who is Colin Stevens?</h2>
+               <p>
+                  I’m a front-end web developer and storyteller whose
+                  experiences in web project management, journalism and customer
+                  service have shaped me into a detail-oriented, product-focused
+                  problem solver.
+               </p>
+
+               <p>
+                  I am currently enrolled in a full stack development bootcamp
+                  at Johns Hopkins University. So far in the bootcamp, I built
+                  upon my strong foundation in HTML and CSS while learning the
+                  basics of JavaScript and JQuery, focusing all my projects on
+                  mobile-first designs.
+               </p>
+
+               <p>
+                  In addition to the bootcamp, I work full time managing content
+                  and search engine optimization on a local hospital’s
+                  consumer-facing website. My time in this role has helped me
+                  learn about crafting a smooth user experience and how to
+                  develop content that ranks high in search engines. My degree
+                  and subsequent career in journalism, specifically working at a
+                  daily newspaper, shaped my ability to work in deadline-driven
+                  environments with a focus on detail. The combination of these
+                  experiences gave me a strong foundation for my future as a web
+                  developer and furthering my career in web marketing.
+               </p>
+               <p>
+                  In my free time, I play drums in a cover band. Part of my band
+                  duties is promoting upcoming shows and managing our brand. You
+                  can see examples of my work on our Instagram account and on
+                  our website, which I designed.
+               </p>
+               <p>
+                  I also enjoy photography. I took the photos on this page -
+                  including the headshot, using a timer - and my photos can be
+                  viewed on my Instagram account.
+               </p>
+            </div>
+         </div>
+      </div>
+         <!-- ============== END OF THE BODY COPY============== -->
+      </div>
+      </div>
+
+      <!-- SIDE EFFECTS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+           offset: 150,
+           duration: 800
+        });
+      </script>
    </body>
 
    <script

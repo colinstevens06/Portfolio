@@ -6,6 +6,7 @@ $(document).ready(function() {
    const headline = $("#headline");
    const bodycopy = $("#body-copy");
    const navgroup = $("#nav-group");
+   const laterFade = $(".later-fade");
 
    const tl = new TimelineMax();
 
@@ -37,6 +38,6 @@ $(document).ready(function() {
          "-=1"
       )
       .fromTo(headline, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
-      .fromTo(bodycopy, 0.5, { opacity: 0 }, { opacity: 1 })
-      .fromTo(navgroup, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1");
+      .fromTo(navgroup, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
+      .fromTo(laterFade, 0.5, { opacity: 0 }, { opacity: 1 });
 });
