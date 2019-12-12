@@ -203,6 +203,9 @@ section {
 }
 
 /* ============= PROJECTS PAGE ============= */
+.projects-container {
+   padding-bottom: 3em;
+}
 
 .projects-container .card {
    background: transparent;
@@ -229,6 +232,10 @@ section {
 .projects-container .card-title {
    text-align: center;
    font-size: 2rem;
+}
+
+.projects-container .card:last-child {
+   margin-bottom: 0;
 }
 
 .order-2 {
