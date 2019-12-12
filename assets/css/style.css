@@ -89,6 +89,10 @@ nav {
    background: linear-gradient(to left, #6597f3, #e3e9f5);
 }
 
+.forest-gradient {
+   background: linear-gradient(to left, #101808, #626362);
+}
+
 .hero {
    height: 60%;
    width: 100%;
@@ -229,6 +233,12 @@ section {
 
 .order-2 {
    order: 2;
+}
+
+/* ============= ABOUT PAGE ============= */
+
+.about-hero img {
+   width: 100%;
 }
 
 @media screen and (max-width: 992px) {
