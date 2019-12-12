@@ -32,12 +32,6 @@ nav {
    opacity: 0.5;
 }
 
-#logo {
-   grid-column: 2/3;
-   font-size: 3em;
-   color: black;
-}
-
 .logo {
    grid-column: 2/3;
    font-size: 3em;
@@ -74,7 +68,7 @@ nav {
    top: 0;
    left: 0;
    width: 100%;
-   height: 250vh;
+   height: 100vh;
    background: linear-gradient(to left, #ffa57b, #ffc8ae);
    z-index: -2;
 }
@@ -226,7 +220,7 @@ section {
       height: 50vh;
    }
 
-   #logo {
+   .logo {
       font-size: 1.5em;
    }
 

@@ -26,28 +26,29 @@
    <body>
       <header>
          <nav>
-            <h1 id="logo" style="opacity: 0;">Colin Stevens</h1>
-            <div class="nav-group" style="opacity: 0;">
+            <h1 class="logo" id="logo" style="opacity: 0;">Colin Stevens</h1>
+            <div class="nav-group" id="nav-group" style="opacity: 0;">
                <a href="index.html"><div class="nav-btn">Home</div></a>
                <a href="projects.html"><div class="nav-btn">Projects</div></a>
                <a href="about.html"><div class="nav-btn">About</div></a>
             </div>
          </nav>
          <section>
-            <div class="hero" style="width: 0%">
+            <div class="hero" id="hero" style="width: 0%">
                <img
                   src="./assets/images/Colin-Stevens-Portfolio-Hero.jpg"
                   alt="Sunrise in Baltimore"
                   class="rounded"
                />
-               <h2 class="headline" style="opacity: 0;">
+               <h2 class="headline" id="headline" style="opacity: 0;">
                   Baltimore Web Developer
                </h2>
             </div>
          </section>
+         <div class="slider" id="slider"></div>
       </header>
       <div class="container">
-         <div class="body-copy" style="opacity: 0;">
+         <div class="body-copy" id="body-copy" style="opacity: 0;">
             <img
                src="./assets/images/colin-stevens-headshot.jpg"
                alt="Colin Stevens"
@@ -101,10 +102,15 @@
                               <div class="card-title">Development Projects</div>
                            </div>
                         </a>
-                        <div class="card text-center">
-                           <i class="far fa-keyboard"></i>
-                           <div class="card-title">Resume</div>
-                        </div>
+                        <a
+                           href="./assets/PDFs/colin-stevens-resume.pdf"
+                           target="_blank"
+                        >
+                           <div class="card text-center">
+                              <i class="far fa-keyboard"></i>
+                              <div class="card-title">Resume</div>
+                           </div>
+                        </a>
                         <a href="./about.html">
                            <div class="card text-center">
                               <i class="fas fa-user"></i>
@@ -117,8 +123,6 @@
             </div>
          </div>
       </div>
-
-      <div class="slider"></div>
    </body>
 
    <script

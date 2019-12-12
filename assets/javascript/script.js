@@ -1,11 +1,11 @@
 $(document).ready(function() {
-   const hero = $(".hero");
-   const slider = $(".slider");
+   const hero = $("#hero");
+   const slider = $("#slider");
    const logo = $("#logo");
    const hamburger = $(".hamburger");
-   const headline = $(".headline");
-   const bodycopy = $(".body-copy");
-   const navgroup = $(".nav-group");
+   const headline = $("#headline");
+   const bodycopy = $("#body-copy");
+   const navgroup = $("#nav-group");
 
    const tl = new TimelineMax();
 
