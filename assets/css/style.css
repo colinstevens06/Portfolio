@@ -222,7 +222,6 @@ section {
    top: 0;
    border-radius: 10px;
    box-shadow: 20px 10px 50px -5px;
-
    background-color: #f2f2f3;
    border: 1px solid #f2f2f3;
    opacity: 0.7;
@@ -246,6 +245,29 @@ section {
 
 .about-hero img {
    width: 100%;
+   z-index: 1;
+}
+
+.about-hero {
+   position: relative;
+}
+
+.about-hero::after {
+   content: "Your Next Team Member";
+
+   position: absolute;
+   right: 0;
+   margin-right: 2em;
+   top: 0;
+   margin-top: 1em;
+   border-radius: 5px;
+   padding: 8px;
+   font-size: 3.3rem;
+   box-shadow: 20px 10px 50px -5px;
+   background-color: #f2f2f3;
+   border: 1px solid #f2f2f3;
+   opacity: 0.5;
+   z-index: 1;
 }
 
 @media screen and (max-width: 992px) {
