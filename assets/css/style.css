@@ -234,9 +234,21 @@ section {
    z-index: -1;
 }
 
+.projects-container .card-body {
+   padding: 1.25rem 1.5rem;
+}
+
 .projects-container .card-title {
    text-align: center;
    font-size: 2rem;
+}
+
+.projects-container .card-text {
+   font-size: 0.9rem;
+}
+
+.projects-container .card-text p {
+   font-size: 1rem;
 }
 
 .projects-container .card:last-child {
@@ -245,6 +257,16 @@ section {
 
 .order-2 {
    order: 2;
+}
+
+.btn-projects {
+   background: white;
+   justify-self: center;
+}
+
+.btn-projects:hover {
+   color: white;
+   background: black;
 }
 
 /* ============= ABOUT PAGE ============= */
