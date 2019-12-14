@@ -370,6 +370,29 @@ section {
       flex-direction: row;
       justify-content: center;
    }
+
+   .about-hero::after {
+      margin-right: 3em;
+      margin-top: 0.5em;
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-size: 1.1rem;
+
+      opacity: 0.7;
+      width: 40%;
+   }
+
+   .about-section h1 {
+      font-size: 1.5rem;
+   }
+
+   .about-section h2 {
+      font-size: 1.25rem;
+   }
+
+   .about-section p {
+      font-size: 1rem;
+   }
 }
 
 @media screen and (max-width: 992px) {
