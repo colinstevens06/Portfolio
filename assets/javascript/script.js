@@ -3,9 +3,7 @@ $(document).ready(function() {
    const slider = $("#slider");
    const logo = $("#logo");
    const hamburger = $(".hamburger");
-   const headline = $("#headline");
-   const bodycopy = $("#body-copy");
-   const navgroup = $("#nav-group");
+   const navgroup = $(".navbar-fade");
    const laterFade = $(".later-fade");
 
    const tl = new TimelineMax();
@@ -37,7 +35,6 @@ $(document).ready(function() {
          { opacity: 1, x: 0 },
          "-=1"
       )
-      .fromTo(headline, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
       .fromTo(navgroup, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
       .fromTo(laterFade, 0.5, { opacity: 0 }, { opacity: 1 });
 });

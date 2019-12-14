@@ -31,13 +31,11 @@ a:hover {
 }
 
 nav {
-   display: grid;
-   grid-template-columns: 10% 1fr 1fr 10%;
    min-height: 15vh;
    color: white;
    align-items: center;
-   background: linear-gradient(to left, #faeded, #ffffff);
-   opacity: 0.5;
+   background: linear-gradient(to left, #fffafa, #ffffff);
+   opacity: 0.8;
 }
 
 .logo {
@@ -46,7 +44,7 @@ nav {
    color: black;
 }
 
-.nav-group {
+.navbar-nav {
    justify-self: end;
    z-index: 2;
    color: black;
@@ -69,6 +67,14 @@ nav {
    transition: 0.5s;
    cursor: pointer;
    background-color: #d88965;
+}
+
+.custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100,100,100, .5)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+   border-color: rgb(0, 0, 0);
 }
 
 .slider {
@@ -270,30 +276,6 @@ section {
    z-index: 1;
 }
 
-@media screen and (max-width: 992px) {
-   .fas,
-   .far {
-      font-size: 100px;
-      padding: 24px;
-      font-size: 10rem;
-      align-items: center;
-   }
-
-   .card-title {
-      font-size: 2.25rem;
-      text-align: center;
-   }
-
-   .card-home {
-      width: 80%;
-   }
-
-   .slider {
-      /* height: 300vh; */
-      background: linear-gradient(to left, #ffa57b, #f8ceba);
-   }
-}
-
 @media screen and (max-width: 678px) {
    p {
       font-size: 1.25rem;
@@ -335,6 +317,35 @@ section {
 
    .slider {
       height: 450px;
+      background: linear-gradient(to left, #ffa57b, #f8ceba);
+   }
+
+   .navbar-nav {
+      flex-direction: row;
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .fas,
+   .far {
+      font-size: 100px;
+      padding: 24px;
+      font-size: 10rem;
+      align-items: center;
+   }
+
+   .card-title {
+      font-size: 2.25rem;
+      text-align: center;
+   }
+
+   .card-home {
+      width: 80%;
+   }
+
+   .slider {
+      /* height: 300vh; */
       background: linear-gradient(to left, #ffa57b, #f8ceba);
    }
 }
