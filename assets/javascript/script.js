@@ -5,6 +5,8 @@ $(document).ready(function() {
    const hamburger = $(".hamburger");
    const navgroup = $(".navbar-fade");
    const laterFade = $(".later-fade");
+   const htmlElement = $("html");
+   const elementFadeIn = $(".fade-in");
 
    const tl = new TimelineMax();
 
@@ -37,4 +39,22 @@ $(document).ready(function() {
       )
       .fromTo(navgroup, 0.5, { opacity: 0 }, { opacity: 1 }, "-=1")
       .fromTo(laterFade, 0.5, { opacity: 0 }, { opacity: 1 });
+
+   function pageChange(event) {
+      event.preventDefault();
+      let goToURL = $(this).attr("data-url");
+
+      htmlElement.fadeOut(500);
+      setTimeout(() => {
+         document.location.href = goToURL;
+      }, 500);
+   }
+
+   function onLoad() {
+      elementFadeIn.fadeIn(500);
+   }
+
+   $(".nav-fade").on("click", pageChange);
+
+   onLoad();
 });

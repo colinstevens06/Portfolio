@@ -25,6 +25,16 @@ a:hover {
    color: inherit;
 }
 
+/* i {
+   transition: 0.5s;
+}
+
+i:hover {
+   cursor: pointer;
+   color: #d88965;
+   transition: 0.5s;
+} */
+
 .clearfix {
    overflow: auto;
    clear: all;
@@ -48,6 +58,11 @@ nav {
    justify-self: end;
    z-index: 2;
    color: black;
+}
+
+.navbar-nav button {
+   border: none;
+   border-right: 1px solid black;
 }
 
 .nav-btn {
@@ -196,6 +211,13 @@ section {
    align-items: center;
    margin-left: auto;
    margin-right: auto;
+   transition: 0.5s;
+}
+
+.card-home:hover {
+   cursor: pointer;
+   transition: 0.5s;
+   color: #d88965;
 }
 
 .card-title {

@@ -24,7 +24,7 @@
       <!-- SEO TOUCHPOINTS -->
       <title>Colin Stevens | Web Developer | Baltimore</title>
    </head>
-   <body>
+   <body class="fade-in" style="display: none;">
          <!-- ********* START OF NAVIGATION ********* -->
 
          <header>
@@ -51,13 +51,9 @@
                         id="navbarTogglerDemo02"
                      >
                         <div class="navbar-nav ml-auto navbar-fade">
-                           <a href="index.html"><div class="nav-btn">Home</div></a>
-                           <a href="projects.html"
-                              ><div class="nav-btn">Projects</div></a
-                           >
-                           <a href="about.html"
-                              ><div class="nav-btn">About</div></a
-                           >
+                           <button class="nav-btn nav-fade" data-url="index.html">Home</button>
+                           <button class="nav-btn nav-fade" data-url="projects.html">Projects</button>
+                           <button class="nav-btn nav-fade" data-url="about.html">About</button>
                         </div>
                      </div>
                   </div>
@@ -84,11 +80,10 @@
          <div class="row">
             <div class="col">
                   <div class="card-deck three-pack" data-aos="fade-right">
-                     <div class="card card-home text-center">
-                        <a href="./projects.html">
+                     <div class="card card-home text-center nav-fade" data-url="projects.html">
+   
                            <i class="fas fa-laptop-code"></i>
                            <div class="card-title">Development Projects</div>
-                        </a>
                      </div>
 
                      <div class="card card-home text-center">
@@ -98,11 +93,9 @@
                         </a>
                      </div>
 
-                     <div class="card card-home text-center">
-                        <a href="./about.html">
+                     <div class="card card-home text-center nav-fade" data-url="about.html">
                            <i class="fas fa-user"></i>
                            <div class="card-title">About Me</div>
-                        </a>
                      </div>
                   </div>
             </div>
@@ -156,7 +149,7 @@
                <p>
                   I also enjoy photography. I took the photos on this page -
                   including the headshot, using a timer - and my photos can be
-                  viewed on my Instagram account.
+                  viewed on my <a href="https://www.instagram.com/drumminup/" target="_blank">Instagram account</a>.
                </p>
             </div>
          </div>

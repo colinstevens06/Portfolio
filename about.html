@@ -25,7 +25,7 @@
    </head>
 
    <!-- START OF BODY -->
-   <body>
+   <body class="fade-in" style="display: none;">
       <div class="forest-gradient pb-3">
          <!-- ********* START OF NAVIGATION ********* -->
 
@@ -53,13 +53,18 @@
                      id="navbarTogglerDemo02"
                   >
                      <div class="navbar-nav ml-auto">
-                        <a href="index.html"><div class="nav-btn">Home</div></a>
-                        <a href="projects.html"
-                           ><div class="nav-btn">Projects</div></a
+                        <button class="nav-btn nav-fade" data-url="index.html">
+                           Home
+                        </button>
+                        <button
+                           class="nav-btn nav-fade"
+                           data-url="projects.html"
                         >
-                        <a href="about.html"
-                           ><div class="nav-btn">About</div></a
-                        >
+                           Projects
+                        </button>
+                        <button class="nav-btn nav-fade" data-url="about.html">
+                           About
+                        </button>
                      </div>
                   </div>
                </div>
@@ -85,9 +90,7 @@
                         an important part of my life. I'm looking forward to
                         channelling that energy in my web development.
                      </p>
-                     <p>
-                        
-                     </p>
+                     <p></p>
                      <p>
                         I am goal driven and always try to do the best at
                         whatever I am doing, no matter if it's in the workplace
