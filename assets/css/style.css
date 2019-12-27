@@ -192,12 +192,12 @@ section {
    margin-top: 45px;
 }
 
-.three-pack a {
+.icon-grid a {
    color: black;
    transition: 0.5s;
 }
 
-.three-pack a:hover {
+.icon-grid a:hover {
    text-decoration: none;
    transition: 0.5s;
    color: #d88965;
@@ -224,7 +224,8 @@ section {
 }
 
 .fas,
-.far {
+.far,
+.fab {
    font-size: 150px;
    padding: 24px;
 }
