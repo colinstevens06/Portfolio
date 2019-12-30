@@ -7,6 +7,7 @@ $(document).ready(function() {
    const laterFade = $(".later-fade");
    const htmlElement = $("html");
    const elementFadeIn = $(".fade-in");
+   const aboutSectionDiv = $("#about-section")
 
    const tl = new TimelineMax();
 
@@ -50,11 +51,35 @@ $(document).ready(function() {
       }, 500);
    }
 
+   function largeImage(event) {
+      event.preventDefault();
+      let selectedImg = $(this).attr("data-small-img");
+      let showThisImg = "#";
+
+      switch (selectedImg) {
+         case "image-1":
+            showThisImg += "about-img-1";
+            break;
+         case "image-2":
+            showThisImg += "about-img-2";
+            break;
+         default: 
+            showThisImg += "about-img-3";
+      }
+
+      aboutSectionDiv.fadeOut(250);
+      setTimeout(() => {
+         $(`showThisImg`).fadeIn(250)
+      }, 250);
+
+   }
+
    function onLoad() {
       elementFadeIn.fadeIn(500);
    }
 
    $(".nav-fade").on("click", pageChange);
+   $(".img-about").on("click", largeImage)
 
    onLoad();
 });
