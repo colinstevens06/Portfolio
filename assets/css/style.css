@@ -231,7 +231,7 @@ section {
    padding: 24px;
 }
 
-/* ============= PROJECTS PAGE ============= */
+/* ========================== PROJECTS PAGE ========================== */
 .projects-container {
    padding-bottom: 3em;
 }
@@ -292,7 +292,7 @@ section {
    background: black;
 }
 
-/* ============= ABOUT PAGE ============= */
+/* ========================== ABOUT PAGE ========================== */
 
 .about-hero img {
    width: 100%;
@@ -343,7 +343,25 @@ section {
    margin-bottom: 15px;
 }
 
-/* ============= MEDIA QUERIES ============= */
+.large-about-img {
+   position: relative;
+}
+
+.fa-times-circle {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   color: #ffffff;
+   font-size: 50px;
+}
+
+.fa-times-circle:hover {
+   transition: 0.5s;
+   transform: rotateY(180deg);
+   cursor: pointer;
+}
+
+/* ========================== MEDIA QUERIES ========================== */
 
 @media screen and (max-width: 678px) {
    p {

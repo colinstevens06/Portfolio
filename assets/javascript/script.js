@@ -7,7 +7,7 @@ $(document).ready(function() {
    const laterFade = $(".later-fade");
    const htmlElement = $("html");
    const elementFadeIn = $(".fade-in");
-   const aboutSectionDiv = $("#about-section")
+   const aboutSectionDiv = $("#about-section");
 
    const tl = new TimelineMax();
 
@@ -63,15 +63,38 @@ $(document).ready(function() {
          case "image-2":
             showThisImg += "about-img-2";
             break;
-         default: 
+         default:
             showThisImg += "about-img-3";
       }
 
+      console.log(showThisImg);
+
       aboutSectionDiv.fadeOut(250);
       setTimeout(() => {
-         $(`showThisImg`).fadeIn(250)
+         $(showThisImg).fadeIn(250);
       }, 250);
+   }
 
+   function closeLargeImage(event) {
+      event.preventDefault();
+      let selectedImg = $(this).attr("data-small-img");
+      let thisImg = "#";
+
+      switch (selectedImg) {
+         case "image-1":
+            thisImg += "about-img-1";
+            break;
+         case "image-2":
+            thisImg += "about-img-2";
+            break;
+         default:
+            thisImg += "about-img-3";
+      }
+
+      $(thisImg).fadeOut(250);
+      setTimeout(() => {
+         aboutSectionDiv.fadeIn(250);
+      }, 250);
    }
 
    function onLoad() {
@@ -79,7 +102,8 @@ $(document).ready(function() {
    }
 
    $(".nav-fade").on("click", pageChange);
-   $(".img-about").on("click", largeImage)
+   $(".img-about").on("click", largeImage);
+   $(".fa-times-circle").on("click", closeLargeImage);
 
    onLoad();
 });
