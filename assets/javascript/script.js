@@ -77,21 +77,8 @@ $(document).ready(function() {
 
    function closeLargeImage(event) {
       event.preventDefault();
-      let selectedImg = $(this).attr("data-small-img");
-      let thisImg = "#";
 
-      switch (selectedImg) {
-         case "image-1":
-            thisImg += "about-img-1";
-            break;
-         case "image-2":
-            thisImg += "about-img-2";
-            break;
-         default:
-            thisImg += "about-img-3";
-      }
-
-      $(thisImg).fadeOut(250);
+      $(".large-image").fadeOut(250);
       setTimeout(() => {
          aboutSectionDiv.fadeIn(250);
       }, 250);
