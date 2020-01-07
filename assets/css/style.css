@@ -346,6 +346,10 @@ section {
    border-radius: 5px;
 }
 
+.img-about:hover {
+   cursor: pointer;
+}
+
 .large-about-img {
    position: relative;
 }
