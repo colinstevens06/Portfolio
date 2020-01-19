@@ -445,6 +445,12 @@ section {
       width: 90px;
    }
 
+   .about-hero {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      margin-top: 3rem !important;
+   }
+
    .about-hero::after {
       margin-right: 3em;
       margin-top: 0.5em;
@@ -456,7 +462,7 @@ section {
    }
 
    .about-section h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
    }
 
    .about-section h2 {

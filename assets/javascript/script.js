@@ -93,7 +93,13 @@ $(document).ready(function() {
             case "home":
                $(".hero-image").attr(
                   "src",
-                  "assets/images/colin-stevens-baltimore-web-developer-mobile-2.jpg"
+                  "assets/images/colin-stevens-baltimore-web-developer-mobile.jpg"
+               );
+               break;
+            case "about":
+               $(".hero-image").attr(
+                  "src",
+                  "assets/images/about/about-colin-stevens-baltimore-web-developer-mobile.jpg"
                );
          }
       }
