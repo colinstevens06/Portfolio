@@ -308,18 +308,19 @@ section {
    content: "Your Next Team Member";
    position: absolute;
    right: 0;
-   margin-right: 2em;
    top: 0;
+   margin-right: 2em;
    margin-top: 1em;
    border-radius: 5px;
-   padding: 14px 18px;
-   font-size: 3.3rem;
+   padding: 14px 10px;
+   font-size: 5rem;
+   text-align: center;
    box-shadow: 20px 10px 50px -5px;
    background-color: #f2f2f3;
    border: 1px solid #f2f2f3;
    opacity: 0.5;
    z-index: 1;
-   width: 28%;
+   width: 25%;
 }
 
 .about-section {
@@ -376,6 +377,22 @@ section {
 
 /* ========================== MEDIA QUERIES ========================== */
 
+@media screen and (max-width: 1478px) {
+   .about-hero::after {
+      padding: 14px 24px;
+      font-size: 4rem;
+      width: 30%;
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .about-hero::after {
+      padding: 14px 24px;
+      font-size: 2.5rem;
+      width: 25%;
+   }
+}
+
 @media screen and (max-width: 992px) {
    .fas,
    .far {
@@ -396,6 +413,11 @@ section {
    .slider {
       /* height: 300vh; */
       background: linear-gradient(to left, #ffa57b, #f8ceba);
+   }
+
+   .about-hero::after {
+      padding: 14px 10px;
+      font-size: 2rem;
    }
 }
 
