@@ -376,6 +376,29 @@ section {
 
 /* ========================== MEDIA QUERIES ========================== */
 
+@media screen and (max-width: 992px) {
+   .fas,
+   .far {
+      font-size: 100px;
+      padding: 24px;
+      align-items: center;
+   }
+
+   .card-title {
+      font-size: 2.25rem;
+      text-align: center;
+   }
+
+   .card-home {
+      width: 80%;
+   }
+
+   .slider {
+      /* height: 300vh; */
+      background: linear-gradient(to left, #ffa57b, #f8ceba);
+   }
+}
+
 @media screen and (max-width: 678px) {
    /* ========================== MOBILE HERO IMAGE ========================== */
    .slider {
@@ -476,32 +499,14 @@ section {
    .about-section p {
       font-size: 1.1rem;
    }
-
-   .left-col {
-      margin-bottom: 2.5rem;
-   }
-}
-
-@media screen and (max-width: 992px) {
    .fas,
    .far {
-      font-size: 100px;
-      padding: 24px;
-      font-size: 10rem;
+      font-size: 50px;
+      padding: 8px;
       align-items: center;
    }
 
-   .card-title {
-      font-size: 2.25rem;
-      text-align: center;
-   }
-
-   .card-home {
-      width: 80%;
-   }
-
-   .slider {
-      /* height: 300vh; */
-      background: linear-gradient(to left, #ffa57b, #f8ceba);
+   .left-col {
+      margin-bottom: 2.5rem;
    }
 }
