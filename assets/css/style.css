@@ -377,19 +377,25 @@ section {
 /* ========================== MEDIA QUERIES ========================== */
 
 @media screen and (max-width: 678px) {
+   /* ========================== MOBILE HERO IMAGE ========================== */
+   .slider {
+      height: 100vh;
+      background: linear-gradient(to left, #ffa57b, #f8ceba);
+   }
+
+   section {
+      height: 90vh;
+   }
+
    p {
       font-size: 1.25rem;
    }
 
    .headline {
       font-size: 40px;
-      top: 40%;
+      top: 20%;
       left: 30%;
       transform: translate(-30%, -40%);
-   }
-
-   section {
-      height: 50vh;
    }
 
    .logo {
@@ -413,11 +419,6 @@ section {
    .body-copy h2 {
       font-size: 2.5rem;
       text-align: center;
-   }
-
-   .slider {
-      height: 450px;
-      background: linear-gradient(to left, #ffa57b, #f8ceba);
    }
 
    .navbar {

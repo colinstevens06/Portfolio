@@ -8,6 +8,7 @@ $(document).ready(function() {
    const htmlElement = $("html");
    const elementFadeIn = $(".fade-in");
    const aboutSectionDiv = $("#about-section");
+   const windowWidth = window.innerWidth;
 
    const tl = new TimelineMax();
 
@@ -86,6 +87,16 @@ $(document).ready(function() {
 
    function onLoad() {
       elementFadeIn.fadeIn(500);
+
+      if (windowWidth <= 400) {
+         switch ($(".hero-image").attr("data-hero-img")) {
+            case "home":
+               $(".hero-image").attr(
+                  "src",
+                  "assets/images/colin-stevens-baltimore-web-developer-mobile-2.jpg"
+               );
+         }
+      }
    }
 
    $(".nav-fade").on("click", pageChange);
