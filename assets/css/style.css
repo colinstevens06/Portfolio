@@ -521,8 +521,7 @@ section {
    .about-section p {
       font-size: 1.1rem;
    }
-   .fas,
-   .far {
+   .fa-times-circle {
       font-size: 50px;
       padding: 8px;
       align-items: center;
