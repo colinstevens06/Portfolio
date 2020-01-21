@@ -26,12 +26,17 @@ a {
    color: inherit;
 }
 
-ul {
-   margin-left: 30px;
-}
-
 a:hover {
    color: inherit;
+}
+
+.body-link {
+   color: blue;
+   text-decoration: underline;
+}
+
+ul {
+   margin-left: 30px;
 }
 
 .clearfix {
