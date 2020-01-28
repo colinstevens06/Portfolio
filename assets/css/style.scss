@@ -1,0 +1,234 @@
+@import "./about";
+@import "./mobile";
+@import "./projects";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+   width: 100%;
+}
+
+p {
+   font-size: 1.1rem;
+}
+
+a {
+   color: inherit;
+   &:hover {
+      color: inherit;
+   }
+}
+
+.body-link {
+   color: blue;
+   text-decoration: underline;
+}
+
+ul {
+   margin-left: 30px;
+}
+
+.clearfix {
+   overflow: auto;
+   clear: all;
+}
+
+nav {
+   min-height: 15vh;
+   color: white;
+   align-items: center;
+   background: linear-gradient(to left, #fffafa, #ffffff);
+   opacity: 0.8;
+}
+
+.logo {
+   grid-column: 2/3;
+   font-size: 3em;
+   color: black;
+}
+
+.navbar-nav {
+   justify-self: end;
+   z-index: 2;
+   color: black;
+}
+
+.navbar-nav button {
+   border: none;
+   border-right: 1px solid black;
+   background-color: transparent;
+}
+
+.nav-btn {
+   display: inline-block;
+   width: 100px;
+   padding: 8px 12px;
+   text-align: center;
+   border-right: 1px solid black;
+   transition: 0.5s;
+   &:last-of-type {
+      border-right: none;
+   }
+   &:hover {
+      transition: 0.5s;
+      cursor: pointer;
+      background-color: #d88965;
+   }
+}
+
+.custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100,100,100, .5)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+   border-color: rgb(0, 0, 0);
+}
+
+.slider {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(to left, #ffa57b, #ffc8ae);
+   z-index: -2;
+}
+
+.orange-gradient {
+   background: linear-gradient(to left, #ffa57b, #ffc8ae);
+}
+
+.grey-gradient {
+   background: linear-gradient(to left, #6597f3, #e3e9f5);
+}
+
+.forest-gradient {
+   background: linear-gradient(to left, #101808, #626362);
+}
+
+.hero {
+   height: 60%;
+   width: 100%;
+   position: relative;
+   &::after {
+      content: "";
+      background: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.1;
+      box-shadow: 20px 10px 50px -5px;
+   }
+}
+
+.hero img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   box-shadow: 20px 10px 50px -5px;
+}
+
+section {
+   display: flex;
+   height: 80vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.headline {
+   position: absolute;
+   top: 20%;
+   left: 0%;
+   font-size: 100px;
+   transform: translate(-20%, -20%);
+   color: azure;
+   left: 20%;
+   z-index: 3;
+}
+
+.body-copy {
+   position: relative;
+   width: 100%;
+   padding: 4em 5em;
+   z-index: 2;
+   &::after {
+      content: "";
+      background: #ffffff;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.9;
+      z-index: -1;
+      border-radius: 10px;
+      box-shadow: 20px 10px 50px -5px;
+   }
+}
+
+.body-copy p {
+   color: black;
+}
+
+.body-copy img {
+   width: 275px;
+   float: right;
+   margin: 0 0 30px 30px;
+   box-shadow: 20px 10px 50px -5px;
+}
+
+.card-deck {
+   margin-top: 45px;
+}
+
+.icon-grid a {
+   color: black;
+   transition: 0.5s;
+   &:hover {
+      text-decoration: none;
+      transition: 0.5s;
+      color: #d88965;
+   }
+}
+
+.card-home {
+   background-color: transparent;
+   border: none;
+   transition: 0.5s;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   transition: 0.5s;
+   &:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      color: #d88965;
+   }
+}
+
+.card-title {
+   font-size: 1.5rem;
+}
+
+.fas,
+.far,
+.fab {
+   font-size: 150px;
+   padding: 24px;
+}

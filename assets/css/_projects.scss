@@ -1,0 +1,58 @@
+/* ========================== PROJECTS PAGE ========================== */
+.projects-container {
+   padding-bottom: 3em;
+}
+
+.projects-container .card {
+   background: transparent;
+   margin-bottom: 2em;
+   z-index: 1;
+   &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+      box-shadow: 20px 10px 50px -5px;
+      background-color: #f2f2f3;
+      border: 1px solid #f2f2f3;
+      opacity: 0.7;
+      z-index: -1;
+   }
+}
+
+.projects-container .card-body {
+   padding: 1.25rem 1.5rem;
+}
+
+.projects-container .card-title {
+   text-align: center;
+   font-size: 2rem;
+}
+
+.projects-container .card-text {
+   font-size: 0.9rem;
+}
+
+.projects-container .card-text p {
+   font-size: 1rem;
+}
+
+.projects-container .card:last-child {
+   margin-bottom: 0;
+}
+
+.order-2 {
+   order: 2;
+}
+
+.btn-projects {
+   background: white;
+   justify-self: center;
+   &:hover {
+      color: white;
+      background: black;
+   }
+}
